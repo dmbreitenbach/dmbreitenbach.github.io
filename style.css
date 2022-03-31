@@ -1,0 +1,56 @@
+/* VARIABLES */
+
+:root {
+    --heading-font-family: "Montserrat", Verdana, Arial, sans-serif;
+    --body-font-family: "Poppins", Verdana, Arial, sans-serif;
+}
+
+/* LAYOUT */
+
+main {
+    max-width: 800px;
+    margin: 4em auto;
+    padding: 1em;
+}
+
+#profile-card {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+#profile-photo img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    #profile-card {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* TYPOGRAPHY */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font-family);
+}
+
+body {
+    font-family: var(--body-font-family);
+}
+
+img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 0.07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
